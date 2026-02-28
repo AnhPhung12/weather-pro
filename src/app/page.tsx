@@ -237,7 +237,7 @@ export default function WeatherPage() {
           ) : data && (
             <div className="flex-1 flex flex-col items-center">
               
-              <h1 className="text-7xl font-black drop-shadow-2xl tracking-tighter">
+              <h1 className="text-4xl md:text-7xl font-black drop-shadow-2xl tracking-tighter text-center">
                 {data.current.name}
               </h1>
               {/* City name */}
@@ -250,7 +250,7 @@ export default function WeatherPage() {
               <div className="flex items-center justify-center my-6">
                 <img 
                   src={`https://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png`}
-                  className="w-48 h-48 filter drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] brightness-110"
+                  className="w-32 h-32 md:w-48 md:h-48 filter drop-shadow-[0_0_20px_rgba(255,255,255,0.6)] brightness-110"
                   alt="Weather Icon"
                 />
                 <span className="text-9xl font-black tracking-tighter drop-shadow-md">
