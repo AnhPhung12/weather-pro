@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* rain drop */
+.rain-drop {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 2px;
+  height: 15px;
+  top: -20px;
+  animation: fall linear infinite;
+}
+
+/* snowflake */
+.snow-flake {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  top: -10px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
